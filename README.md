@@ -20,4 +20,42 @@ curl				-> to download a file
 
 ## Linux PrivEsc - Privilege Escalation
 ![privEsc Tree](https://github.com/oghobhainn/TryHackMe/blob/main/images/privEscTree.png)
+### LinEnum
+Simple Bash script that performs common commands related to privEsc.
+```
+curl -O https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh
+```
+
+## Web Fondamentals
+
+Once the browser knows the IP address (thanks to the DNS), it can ask for the web page using GET REQUEST (http verb). Extra resources like jss, images, css... get their own GET REQUEST.
+HTTP runs on port 80 -> CTF: if port 80 is open, there's probably a website listening to you
+HTTPS runs on port 443 (secured http connexion).
+
+HTML defines the structure of the page
+CSS allows you to change how the pages look
+JavaScript is a programming language that runs in the browser and allows you to make pages interactive or load extra content.
+
+### HTTP verbs
+
+- *GET* to retrieve content		ex: GET /index.html (!! *cURL* is a GET REQUEST)
+- *POST* to send data to a web server (adding a comment, performing a login)
+- * *
+
+#### HTTP Responses
+-*100-199*: Information
+-*200-299*: Successes (200 OK is the "normal" response for a GET)
+-*300-399*: Redirects (the information you want is elsewhere)
+-*400-499*: Client errors (You did something wrong, like asking for something that doesn't exist)
+    500-599: Server errors (The server tried, but something went wrong on their side)
+
+### COOKIES
+Cookies are small bits of data that are stored in your browser. Each browser will store them separately, so cookies in Chrome won't be available in Firefox. They have a huge number of uses, but the most common are either session management or advertising (tracking cookies). Cookies are normally sent with every HTTP request made to a server.
+
+Why Cookies ? Because HTTP is stateless (Each request is independent and no state is tracked internally).
+Cookies can be broken down into several parts. Cookies have a name, a value, an expiry date and a path. The name identifies the cookie, the value is where data is stored, the expiry date is when the browser will get rid of the cookie automatically and the path determines what requests the cookie will be sent with.
+
+#### Manipulating Cookies
+
+Using your browser's developer tools, you can view and modify cookies. In Firefox, you can open the dev tools with F12. In the Storage tab, you can see cookies that the website has set. There's also a "+" button to allow you to create your own cookies. You can modify all cookies that you can see in this panel, as well as adding more.
 ## OpenVPN
