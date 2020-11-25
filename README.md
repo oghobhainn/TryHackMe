@@ -43,11 +43,11 @@ JavaScript is a programming language that runs in the browser and allows you to 
 - * *
 
 #### HTTP Responses
--*100-199*: Information
--*200-299*: Successes (200 OK is the "normal" response for a GET)
--*300-399*: Redirects (the information you want is elsewhere)
--*400-499*: Client errors (You did something wrong, like asking for something that doesn't exist)
-    500-599: Server errors (The server tried, but something went wrong on their side)
+- *100-199*: Information
+- *200-299*: Successes (200 OK is the "normal" response for a GET)
+- *300-399*: Redirects (the information you want is elsewhere)
+- *400-499*: Client errors (You did something wrong, like asking for something that doesn't exist)
+- *500-599*: Server errors (The server tried, but something went wrong on their side)
 
 ### COOKIES
 Cookies are small bits of data that are stored in your browser. Each browser will store them separately, so cookies in Chrome won't be available in Firefox. They have a huge number of uses, but the most common are either session management or advertising (tracking cookies). Cookies are normally sent with every HTTP request made to a server.
