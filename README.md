@@ -19,5 +19,5 @@ curl				-> to download a file
 ## Linux Registers
 
 ## Linux PrivEsc - Privilege Escalation
-![privEsc Tree](https://github.com/oghobhainn/TryHackMe/images/privEscTree.png)
+![privEsc Tree](https://github.com/oghobhainn/TryHackMe/blob/main/images/privEscTree.png)
 ## OpenVPN
