@@ -9,11 +9,15 @@ chmod 421-421-421 (for ex: chmod 760) for rights on read, write and exec.
 chown 				-> changes the user and the group who the file belongs to (see with ls -la)
 		example :	to set the owner of <file> to be 'master' : chown master file.
 					to set owner and group to master : chown master:master file
+curl				-> to download a file
+	-O				keeps the original name
+		example :	curl -O https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh
+
 ```
 
 
 ## Linux Registers
 
 ## Linux PrivEsc - Privilege Escalation
-![privEsc Tree](images/privEscTree.png?raw=true "privEsc Tree")
+![privEsc Tree](master/images/privEscTree.png?raw=true "privEsc Tree")
 ## OpenVPN
