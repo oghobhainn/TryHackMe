@@ -38,8 +38,8 @@ JavaScript is a programming language that runs in the browser and allows you to 
 
 ### HTTP verbs
 
-- *GET* to retrieve content		ex: GET /index.html (!! *cURL* is a GET REQUEST)
-- *POST* to send data to a web server (adding a comment, performing a login)
+- *GET* to retrieve content. *curl* is a GET REQUEST		ex: curl http://10.10.82.69:8081/ctf/get
+- *POST* to send data to a web server (adding a comment, performing a login)	ex: curl -X POST --data="flag_please" http://<IP>
 - * *
 
 #### HTTP Responses
