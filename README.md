@@ -39,7 +39,7 @@ JavaScript is a programming language that runs in the browser and allows you to 
 ### HTTP verbs
 
 - *GET* to retrieve content. *curl* is a GET REQUEST		ex: curl http://10.10.82.69:8081/ctf/get
-- *POST* to send data to a web server (adding a comment, performing a login)	ex: curl -X POST --data="flag_please" http://<IP>
+- *POST* to send data to a web server (adding a comment, performing a login)	ex: curl -X POST --data="flag_please" http://< IP >
 - * *
 
 #### HTTP Responses
@@ -58,4 +58,13 @@ Cookies can be broken down into several parts. Cookies have a name, a value, an 
 #### Manipulating Cookies
 
 Using your browser's developer tools, you can view and modify cookies. In Firefox, you can open the dev tools with F12. In the Storage tab, you can see cookies that the website has set. There's also a "+" button to allow you to create your own cookies. You can modify all cookies that you can see in this panel, as well as adding more.
+- To get a cookie : curl http://< ip >:8081/ctf/getcookie -c cookielist.txt	(then check the cookielist file)
+- To add a cookie : curl http://< ip >:8081/ctf/sendcookie --cookie < name > = < value >
+
+## Networking
+
+### Overview of the OSI - Open System Interconnection
+OSI is a standardised model behind computer networking. IRL we use the TCP/IP model.
+![OSI Model](https://github.com/oghobhainn/TryHackMe/blob/main/images/OSI_model.png)
+
 ## OpenVPN
