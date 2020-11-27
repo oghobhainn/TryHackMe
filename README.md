@@ -2,7 +2,7 @@
 
 ## Linux Commands
 ```
-ssh <user>@<host>	-> remotely accessing a machine
+ssh <user>@<host>	-> remotely accessing a machine !!! it's / @ \ between the two.
 su	<user>			-> to change user on same machine
 find <dir> -name <name> -type (f file, d dir, ...) 2>/dev/null (to avoid all non authorized access msges)
 chmod 421-421-421 (for ex: chmod 760) for rights on read, write and exec.
@@ -12,9 +12,36 @@ chown 				-> changes the user and the group who the file belongs to (see with ls
 curl				-> to download a file
 	-O				keeps the original name
 		example :	curl -O https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh
+hostname		: to know the host of the machine
+cat /etc/passwd ( | grep user) : to know how many users of the machine there are
+cat /etc/shells		: to know how many shells are currently running
+
 
 ```
+### Cronjobs
 
+located in the spool directory (/var/spool/cron/crontabs). There are all the cronjobs for all users, except the root user 
+stored in tables called crontabs
+
+To display contents of the root user’s crontab, use the less command:
+
+crontab -l		:	to list all the cronjobs for the current user
+
+### SUID/GUID
+
+The first step in Linux privilege escalation exploitation is to check for files with the SUID/GUID bit set. This means that the file or files can be run with the permissions of the file(s) owner/group.
+An *SUID binary* any file has read/write/execute permissions for an user, a group and the other :
+|user|group|others|
+|rwx|rwx|rwx|
+|421|421|421|
+When special permission is given to each user it becomes SUID or SGID. When extra bit "4" is set to user(Owner), it becomes SUID (Set User ID) and when bit "2" is set to group it becomes SGID (Set Group ID).
+SO we're looking for
+```
+SUID : rws-rwx-rwx
+GUID : rwx-rws-rwx
+```
+To find SUID binaries : find / -perm -u=s -type f 2\>/dev/null
+The  -u=s means any of the permission bits mode are set
 
 ## Linux Registers
 
@@ -25,6 +52,7 @@ Simple Bash script that performs common commands related to privEsc.
 ```
 curl -O https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh
 ```
+
 
 ## Web Fondamentals
 
@@ -64,7 +92,11 @@ Using your browser's developer tools, you can view and modify cookies. In Firefo
 ## Networking
 
 ### Overview of the OSI - Open System Interconnection
-OSI is a standardised model behind computer networking. IRL we use the TCP/IP model.
+OSI is a standardised model behind computer networking.
 ![OSI Model](https://github.com/oghobhainn/TryHackMe/blob/main/images/OSI_model.png)
+
+But IRL we use the TCP/IP model, which is less understanbl but actually the same things happen.
+
+
 
 ## OpenVPN
