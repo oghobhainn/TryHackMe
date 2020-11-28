@@ -29,6 +29,7 @@ stored in tables called crontabs
 To display contents of the root user’s crontab, use the less command:
 
 ```crontab -l```	: to list all the cronjobs for the current user
+
 ```cat /etc/crontab```	: to view what cron jobs are scheduled
 
 ### SUID/GUID
