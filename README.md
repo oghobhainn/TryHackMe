@@ -21,12 +21,15 @@ cat /etc/shells		: to know how many shells are currently running
 ```
 ### Cronjobs
 
-located in the spool directory (/var/spool/cron/crontabs). There are all the cronjobs for all users, except the root user 
+The Cron daemon is a long-running process that executes commands at specific dates and times. We can use it to schedule activities (one-time or recurring).
+
+Located in the spool directory (/var/spool/cron/crontabs). There are all the cronjobs for all users, except the root user 
 stored in tables called crontabs
 
 To display contents of the root user’s crontab, use the less command:
 
-crontab -l		:	to list all the cronjobs for the current user
+```crontab -l```	: to list all the cronjobs for the current user
+```cat /etc/crontab```	: to view what cron jobs are scheduled
 
 ### SUID/GUID
 
