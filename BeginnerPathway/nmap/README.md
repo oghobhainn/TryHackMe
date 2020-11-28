@@ -16,5 +16,6 @@ FLAGS :
 -p		scans a specific range of ports (0-1000 for ex, can also be a single port)
 -p-		scans all ports
 -Pn		to not ping the host
+--script vuln	scans for any vulnerabilities
 ```
 
