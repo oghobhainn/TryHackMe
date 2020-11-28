@@ -4,6 +4,7 @@
 ```
 ssh <user>@<host>	-> remotely accessing a machine !!! it's / @ \ between the two.
 su	<user>			-> to change user on same machine
+
 find <dir> -name <name> -type (f file, d dir, ...) 2>/dev/null (to avoid all non authorized access msges)
 chmod 421-421-421 (for ex: chmod 760) for rights on read, write and exec.
 chown 				-> changes the user and the group who the file belongs to (see with ls -la)
@@ -43,6 +44,31 @@ GUID : rwx-rws-rwx
 To find SUID binaries : find / -perm -u=s -type f 2\>/dev/null
 The  -u=s means any of the permission bits mode are set
 
+### Understanding /etc/passwd
+
+Plain text file containing a list of the system's account. It should have a READ perm for everybody, but a WRITE perm only for root.
+```
+test:x:0:0:root:/root/bin/bash
+username:passwd:uid:gid:uid-info:homedir:command/shell
+```
+- *username*
+- *password* encrypted in /etc/shadow file. Here it's the hash of the passwd.
+- *User ID* each user has an UID. 0 is for roots and UIDS 1-99 for predefined accounts. 100-999 are reserved by system for admin and system accounts/groups.
+- *GID* the primary groupd ID, stored in /etc/group file
+- *User ID info* the comment field (with phone number, address...)
+- *Home Dir* the absolute path to the directory the user will be in when they log in. If it doesn't exist, it becomes /
+- *Command/Shell* the absolute path of a command or shell (/bin/bash)
+
+If the file is writable, we can add an user ! to create a compliant password hash, we can use the salt "new" and the password "123"
+```
+openssl passwd -1 -salt [salt] [password]
+```
+To modify /etc/passwd, open it with vi/vim/nano and write on it. echo "..." didn't work, dk why.
+
+### Escaping Vi Editor
+
+*sudo -l* shows us that an user has root priv on vi. This can help us getting root !
+We can use ```sudo vi```, then type ```:!sh``` and it's done, we're root :-)
 ## Linux Registers
 
 ## Linux PrivEsc - Privilege Escalation
