@@ -16,3 +16,13 @@ It also uses the ICMP protocol.
 traceroute <destination>
 ```
 ![Traceroute example](https://github.com/oghobhainn/TryHackMe/blob/main/images/traceroute.png)
+
+## Whois - Most efficient way to get a girl's number
+
+Domain Names are leased out by companies called Domain Registrars.
+The command allows you to query who a domain name is registered to. In Europe/N-A, personal details are redacted.
+```
+whois <domain>
+```
+
+## Dig - :notes: I am a dwarf and I'm digging a hole :musical_note: 
