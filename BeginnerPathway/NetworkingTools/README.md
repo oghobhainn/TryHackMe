@@ -26,3 +26,10 @@ whois <domain>
 ```
 
 ## Dig - :notes: I am a dwarf and I'm digging a hole :musical_note: 
+
+Dig allows us to manually query recursive DNS servers of our choice for information about domains.
+When you visit a website in your web browser this all happens automatically, but dig allows us to do it manually.
+
+```
+dig <domain> @<dns-server-IP>
+```
