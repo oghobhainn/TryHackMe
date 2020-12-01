@@ -10,7 +10,7 @@ FLAGS :
 -o		enables OS detection
 -sV		service version detection
 -v		verbosity flag
--vv		very verbose
+-vv		very verbose /!\ALWAYS PUT THIS ONE/!\
 -A		AGGRESSIVE scan, no matter how loud you are
 -T[0-5]	paranoid, sneaky, polite, normal, agressive or insane timing. Paranoid et Sneaky évitent les IDS (Intrusion Detection System), 'polite' prend moins de bande passante, 'Agressive' accélère les scans, 'Insane' suppose que le réseau est ultra rapide et que plus de vitesse vaut moins de précision.
 -p		scans a specific range of ports (0-1000 for ex, can also be a single port)

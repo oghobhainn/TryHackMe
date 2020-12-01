@@ -136,6 +136,8 @@ Using your browser's developer tools, you can view and modify cookies. In Firefo
 - To get a cookie : curl http://< ip >:8081/ctf/getcookie -c cookielist.txt	(then check the cookielist file)
 - To add a cookie : curl http://< ip >:8081/ctf/sendcookie --cookie < name > = < value >
 
+It's possible to directly change cookies within the browser by double-clicking on it, or adding with the '+' sign, and refreshing.
+
 ## Networking
 
 ### Overview of the OSI - Open System Interconnection

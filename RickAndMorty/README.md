@@ -7,7 +7,7 @@ Just using the env variables to store the IP
 export ip=$10.10.220.74
 ```
 
-## Enumeration
+## First ingredient
 
 I'm using nmap to see what ports are accessible.
 

@@ -40,3 +40,7 @@ openssl passwd -1 -salt [salt] [password]
 ```
 To modify /etc/passwd, open it with vi/vim/nano and write on it. echo "..." didn't work, dk why.
 
+## TCP/IP
+
+The three-way handshake consists of three stages. First the connecting terminal (our attacking machine, in this instance) sends a TCP request to the target server with the SYN flag set. The server then acknowledges this packet with a TCP response containing the SYN flag, as well as the ACK flag. Finally, our terminal completes the handshake by sending a TCP request with the ACK flag set.
+![TCP/IP Three-Way Handshake](https://github.com/oghobhainn/TryHackMe/blob/main/images/TCP-IP.png)

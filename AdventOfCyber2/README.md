@@ -1,4 +1,4 @@
-# Advent of Cybe - second edition
+# Advent of Cyber - second edition
 
 December hasn't even started, we can no longer listen to Mariah Carey.
 ...
