@@ -18,4 +18,29 @@ FLAGS :
 -Pn		to not ping the host
 --script vuln	scans for any vulnerabilities
 ```
+It's very useful to save the result of the scan in a file, so that we only need to run it once. This reduces network traffic and thus chance of detection + a reference to give to clients.
+```
+-oA		major format
+-oN		normal format
+-oG		grepabale format
+```
 
+There are 3 basic scan types:
+```
+-sT		TCP Connect Scans
+-sS		Syn "Half-Open" Scans"
+-uU		UDP Scans
+```
+
+The NSE - Nmap Scripting Engine - extends the functionnalities by a lot.
+We can use them with the ```--script=<NSE>``` flag. Some of them : 
+```
+safe		won't affect the target
+intrusive	Not-safe : likely to affect the target
+vuln		Scan for vulnerabilities
+exploit		Attempt to exploit a vulnerability
+auth		Attempts to bypass authentification for running services
+brute		attempts to bruteforce credentials for running services
+discovery	attempts to query running services for further information about the network
+```
+To have more informations on a specific script, we can type ```nmap --script-help <script-name>``` or ![here](https://nmap.org/nsedoc/) is a full list of scripts and their arguments.
