@@ -43,4 +43,4 @@ auth		Attempts to bypass authentification for running services
 brute		attempts to bruteforce credentials for running services
 discovery	attempts to query running services for further information about the network
 ```
-To have more informations on a specific script, we can type ```nmap --script-help <script-name>``` or ![here](https://nmap.org/nsedoc/) is a full list of scripts and their arguments.
+To have more informations on a specific script, we can type ```nmap --script-help <script-name>``` or [here](https://nmap.org/nsedoc/) is a full list of scripts and their arguments.
