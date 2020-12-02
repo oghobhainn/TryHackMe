@@ -1,4 +1,4 @@
-# Day 01
+# Day 01 - Web Exploitation
 
 ## Drop this cookie on the ground mthrfckr !
 
