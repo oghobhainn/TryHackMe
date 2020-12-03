@@ -42,7 +42,7 @@ Then we look at the robots.txt, and we find an interesting-password-looking stri
 
 ![robots.txt](https://github.com/oghobhainn/TryHackMe/blob/main/images/rickmorty/robots.txt.png)
 
-Combining the 2, we reach a command panel
+Combining the 2 in the `/login.php`, we reach a command panel
 
 ![command-panel](https://github.com/oghobhainn/TryHackMe/blob/main/images/rickmorty/command-panel.png)
 
