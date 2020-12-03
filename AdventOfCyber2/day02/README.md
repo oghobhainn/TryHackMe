@@ -16,7 +16,7 @@ When you have the ability to upload files to a server, you have a path straight 
 It is very uncommon to find a file upload with _no filtering_, but less uncommon one with _flawed filtering techniques_ which can be circumvented to upload a malicious script.
 The scrit has to be writte in a language which the server can execute : most of the time in _PHP_.
 
-In this exemple, There's a _File Extension Filtering_, which checks the file extensions of uploaded files. This is done by specifying a list of allowed extensions. Here its _jpeg, jpg, png, _.
+In this exemple, There's a __File Extension Filtering__, which checks the file extensions of uploaded files. This is done by specifying a list of allowed extensions. Here its _jpeg, jpg, png, _.
 Many extension filters split a filename at the dot (.) and check what comes after it against the list. This makes it very easy to bypass by uploading a double-barrelled extension (e.g. .jpg.php).
 
 When implementing an upload system, it's good practice to upload the files to a directory that can't be accessed remotely. But it's _otften not the case_, and scripts are uploaded to a subdir on the webserver (/uploads, /images, /ressources,...)
