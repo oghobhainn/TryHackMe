@@ -2,7 +2,7 @@
 
 ## Burp Suite - a Rick's personnal fav
 
-First we need to porxy our traffic through the *Burp Suite*, we can do that using this [tuto](https://portswigger.net/burp/documentation/desktop/getting-started/proxy-setup/browser).
+First we need to proxy our traffic through the *Burp Suite*, we can do that using this [tuto](https://portswigger.net/burp/documentation/desktop/getting-started/proxy-setup/browser) and __FoxyProxy__ (extension for web browser that allows up to easiliy route or traffic through it).
 
 In the Burp Suite app, we can now click the proxy tab and toogle the button __Intercept is on__. BurpSuite is now helding the request until we forwad it on, so we __Forward__ it.
 
