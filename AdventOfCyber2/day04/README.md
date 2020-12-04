@@ -25,5 +25,4 @@ and we __FUZZ__ the date to find our flag
 
 And here's the flag we're looking for !
 
-![flag](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day03/flag.png)
-
+![flag](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day04/flag.png)
