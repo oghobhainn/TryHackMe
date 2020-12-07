@@ -50,12 +50,11 @@ Most commonly, we use this error to bypass the login authentification or the pas
 
 We need the __ProxyFoxy__ again for this.
 
-We go to santa's website `http://$ip:8000/santapanel` to discover a login page.
-
+We go to santa's website `http://$ip:8000/santapanel` to discover a login page, that we bypass.
 
 ![santa-panel](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day05/santa-panel.png)
 
-We use the proxy to intercept the query, then we save it to `/root/panel-request` and finally send it to the intruder. We can now set off the interception, we won't need it anymore.
+We use the proxy to intercept the query, then we save it to `/root/panel-request` and finally send it to the __repeater__. We can now set off the interception, we won't need it anymore.
 
 ![proxy-repeater](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day05/proxy-repeater.png)
 
