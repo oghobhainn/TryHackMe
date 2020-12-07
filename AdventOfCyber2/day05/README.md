@@ -14,3 +14,5 @@ In an SQLi attack, we mainly use 4 commands
 | FROM | Used to specify which table to select or delete data from.|
 | WHERE | Used to extract only those records that fulfil a specified condition.|
 | UNION | Used to combine the result-set of two or more SELECT statements.|
+
+*Special note : in SQL, `1=1` stands for __True__*.
