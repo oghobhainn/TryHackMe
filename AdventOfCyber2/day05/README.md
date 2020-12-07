@@ -21,7 +21,7 @@ In an SQLi attack, we mainly use 4 commands
 
 SQLi is carried out through abusing a PHP GET parameter (for example __?username=__, or __?id=__) in the URL of a vulnerable web page. These are usually located in the search fields and login page.
 
-![exemple-php]
+![exemple-php](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day05/exemple-php.png)
 
 After a variable `username` was inputted in the code, PHP automatically uses SQL to select all users with the provided username. __This__ can be abused by an attacker.
 
