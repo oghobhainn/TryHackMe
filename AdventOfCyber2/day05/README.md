@@ -65,10 +65,6 @@ We use the proxy to intercept the query, then we save it to `/root/panel-request
 And we have what we're looking for ...
 
 
-![sql-results1](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day05/sql-results.png)
+![sql-results1](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day05/sql-results1.png)
 
-![sql-results2](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day05/sql-results.png)
-
-
-
-
+![sql-results2](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day05/sql-results2.png)
