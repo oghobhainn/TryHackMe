@@ -6,7 +6,7 @@ Let's hack Christmas and make Halloween great again ! #jackThePumpKing
 ![Jack the PumpKing](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/jack_pumpking.png)
 
 ||Day|Theme|
-|---|-----|
+||---|-----|
 |:v:|day 01|Web Exploitation|Web and Cookies|
 |:v:|day 02|Web Exploitation|File uploads (REC) and Reverse Shells|
 |:v:|day 03|Web Exploitation|BurpSuite|
