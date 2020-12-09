@@ -26,4 +26,16 @@ And in the source code of the page, there's an interesting string : *alice:HowDo
 
 ![rabbithole-sourcecode](https://github.com/oghobhainn/TryHackMe/blob/main/images/wonderland/rabbithole-sourcecode.png)
 
+I see nothing else on the website, let's try to connect to the machine using what we've found previously. It works !
 
+![ssh-connect](https://github.com/oghobhainn/TryHackMe/blob/main/images/wonderland/ssh-connect.png)
+
+Let's check where we are, and what are our permissions. Btw, we can't export the password ... gotta write it all again.
+
+![ls](https://github.com/oghobhainn/TryHackMe/blob/main/images/wonderland/ls.png)
+
+![sudo-l](https://github.com/oghobhainn/TryHackMe/blob/main/images/wonderland/sudo-l.png)
+
+Seems like we can use python, and we have a python file ! how wonderful :-)
+
+But now I don't know what to do ... I'll come back to this later !
