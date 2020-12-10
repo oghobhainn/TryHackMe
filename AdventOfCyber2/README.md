@@ -15,3 +15,4 @@ Let's hack Christmas and make Halloween great again ! #jackThePumpKing
 |✅|day 06|Web Exploitation|XSS|
 |:x:|day 07|Networking|WireShark|
 |✅|day 08|Networking|Nmap|
+|✅|day 09|Networking|FTP|
