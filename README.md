@@ -1,5 +1,18 @@
 # TryHackMe
 
+## Tools
+
+enum4Linux
+gobuster
+fuzz
+crackzip
+
+## Programs
+
+Metasploit
+BurpSuite
+
+
 ## Linux Commands
 ```
 ssh <user>@<host>	-> remotely accessing a machine !!! it's / @ \ between the two.
