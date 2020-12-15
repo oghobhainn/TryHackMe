@@ -16,3 +16,9 @@ Let's hack Christmas and make Halloween great again ! #jackThePumpKing
 |:x:|day 07|Networking|WireShark|
 |✅|day 08|Networking|Nmap|
 |✅|day 09|Networking|FTP|
+|✅|day 10|Networking|enum4linux and smbclient|
+|✅|day 11|Networking|privEsc|
+|:x:|day 12|Networking|Metasploit & Windows powershell|
+|✅|day 13|Special day !|A bit of everything|
+|✅|day 14|Special day !|A bit of everything|
+|✅|day 15|Scripting|Python introduction|
