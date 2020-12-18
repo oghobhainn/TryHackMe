@@ -22,3 +22,5 @@ Let's hack Christmas and make Halloween great again ! #jackThePumpKing
 |✅|day 13|Special day !|A bit of everything|
 |✅|day 14|Special day !|A bit of everything|
 |✅|day 15|Scripting|Python introduction|
+|✅|day 16|Scripting|Python requests|
+
