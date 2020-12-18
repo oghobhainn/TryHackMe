@@ -25,7 +25,7 @@ To find a list of functions, run `afl ( | grep main)`:
 
 ![file1-afl](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day17/file1-afl.png)
 
-We can see that here, ther is a main. We can see looking at it using `pdf @main` (_p_rint _d_issamebly _f_unction).
+We can see that here, there is a main. We can look at it using `pdf @main` (__p__rint __d__issamebly __f__unction).
 
 ![file1-pdf](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day17/file1-pdf.png)
 
