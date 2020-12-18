@@ -37,14 +37,14 @@ Then we have to use __breakpoints__ to analyse it step by step. We can set a bre
 Running `dc` will execute the program until we hit the breakpoint.
 So from now on, we have to set appropriate breakpoints, use `ds` to move through intructions and check the values of register and memory. If we make a mistake, we can use `ood` to reload the program.
 
-![file1-dc](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day17/file1.png)
+![file1-dc](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day17/file1-dc.png)
 
 Then we can look the value of a variable by typing `px @ <variable>`. Here we see its `0`for the moment (first byte).
 
-![file1-px](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day17/file1.png)
+![file1-px](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day17/file1-px.png)
 
 Then after running the next instruction (using `ds`), we see the value has changed to `0400`.
 
-![file1-ds](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day17/file1.png)
+![file1-ds](https://github.com/oghobhainn/TryHackMe/blob/main/images/adventofcyber/day17/file1-ds.png)
 
 **Then, boy, it goes nuts. Don't go the assembly way, it's too dark and full of secrets.**
