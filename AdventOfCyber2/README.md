@@ -23,7 +23,7 @@ Let's hack Christmas and make Halloween great again ! #jackThePumpKing
 |:white_check_mark:|day 14|Special day !|A bit of everything|
 |:white_check_mark:|day 15|Scripting|Python introduction|
 |:white_check_mark:|day 16|Scripting|Python requests|
-|:white_check_mark:|day 17|Reverse Engineering||
+|:white_check_mark:|day 17|Reverse Engineering|Assembly and Radare2|
 |:white_check_mark:|day 18|Reverse Engineering||
 
 |:white_check_mark:|day 19|Scripting|Python requests|
