@@ -24,11 +24,11 @@ curl -o big.txt https://github.com/danielmiessler/SecLists/blob/master/Discovery
 ## NOTES:
 
 - reverse shell : a RS is being called on the remote host and forces this host to make a connection to me. So I'm listening for incoming connections, upload and have the shell executed.
-+ php: 
+1. php: 
 ```
 hello
 ```
-+ python:
+2. python:
 ```
 bonjour
 ```
